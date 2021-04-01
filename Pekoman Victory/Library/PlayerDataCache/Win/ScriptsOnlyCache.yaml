@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - FPS
+    - GameManager
     - PlayButton
     - PlayerMovement
     Unity.2D.Animation.Editor.dll:
@@ -51,7 +53,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 586}
     - Class: 114
+      Script: {instanceID: 12174}
+    - Class: 114
       Script: {instanceID: 13990}
+    - Class: 114
+      Script: {instanceID: 14240}
+    - Class: 114
+      Script: {instanceID: 15566}
+    - Class: 114
+      Script: {instanceID: 15788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -614,9 +624,21 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FPS
   platform: 5
   scenePathNames:
   - Assets/Menu/Main Menu.unity
   - Assets/Locations/Victory Town/Victory Town.unity
-  playerPath: C:/Users/Noah/Documents/GitHub/Pekoman-Victory/Builds/4.1.2021 2am/Pekoman
+  playerPath: C:/Users/Noah/Documents/GitHub/Pekoman-Victory/Builds/4.1.2021 5pm/Pekoman
     Victory.exe

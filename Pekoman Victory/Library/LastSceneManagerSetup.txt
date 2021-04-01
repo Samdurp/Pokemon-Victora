@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Locations/Victory Town/Victory Town.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

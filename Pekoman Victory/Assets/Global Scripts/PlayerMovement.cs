@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask grassLayer;
     public Camera camera;
     public bool showDot;
+    public bool playEncounterSound;
     public Sprite dotSprite;
 
     private bool isMoving;
@@ -60,7 +61,11 @@ public class PlayerMovement : MonoBehaviour
                 targetPos.y += input.y;
                 dot.transform.position = new Vector2(targetPos.x, targetPos.y - .25f);
 
-                EncounterPokemon();
+                if (EncounterPokemon() == true && playEncounterSound == true)
+                {
+                    AudioSource audio = GameObject.Find("Encounter Audio").GetComponent<AudioSource>();
+                    audio.Play();
+                }
 
                 if (IsWalkable(targetPos))
                     StartCoroutine(Move(targetPos));
